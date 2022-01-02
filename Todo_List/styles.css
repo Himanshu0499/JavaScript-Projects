@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display : flex;
+    justify-content: center;
+    background-color: #22272c;
+}
+
+.banner{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    background-image: linear-gradient(300deg, rgba(31, 209, 249, 0.6) 0%, rgba(182, 33, 254, 0.6) 74%),
+                url('https://www.maxpixel.net/static/photo/1x/Mountains-Mountain-Nature-Forest-Panorama-1412683.png');
+    width: 100vw;
+    height: 25rem;
+    position: relative;
+    top: 0;
+}
+
+.todoContainer{
+    width: 35rem;
+    height : 35rem;
+    position: absolute;
+    top : 8rem; 
+    z-index: 10;
+
+}
+
+.title {
+    padding-left: 1rem;
+    color : white;
+    font-size: 2.5rem; 
+    font-weight: 900; 
+}
+
+.addTodo{
+    background-color: #17232f;
+    padding : 0.5rem;
+    border-radius: 7px;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.3rem;
+}
+
+.listContainer{
+    border-radius : 5px; 
+    margin-top : 1.5rem;
+    background-color: #17232f;
+    height: fit-content;
+}
+
+.todoLists{
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.todoInput{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.12rem;
+    font-weight: 500;
+    width : 25rem;
+    height : 2.5rem;
+    border : none;
+    margin-left: 1.5rem;
+    background-color: transparent;
+    color: #BCD2E8;
+}
+
+.todoInput:focus{
+    outline: none;
+}
+
+.addBtn{
+    background: none;
+    border: none;
+    color: #BCD2E8;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.newTodo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin : 0px;
+    padding:  0.3rem 1rem 0.3rem 3rem;
+    height: 3.5rem;
+    background : none;
+    color: #BCD2E8;
+    border-bottom: 2px solid #7c848a42;
+    cursor: pointer;
+    font-size: 1.12rem;
+}
+
+.deleteTodo{
+    background : none;
+    border: none;
+    color: #8c9ea3;
+    font-size: 1.3rem;
+    cursor : pointer;
+}
+
+.footer{
+    height: 3.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(140, 158, 163,0.5);
+}
+
+.checked{
+    text-decoration: line-through;
+    color : rgb(140, 158, 163);
+}
+
+/* Alert Css */
+
+.alertPage{
+    width : 100vw;
+    height: 100vh;
+    position :absolute;
+    z-index : 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5)
+}
+
+.todoAlert{
+    width: 35rem;
+    padding : 0rem 1rem 0rem;
+    height : 12.5rem;
+    color: #BCD2E8;
+    background-color : #17232f;
+    border-radius : 10px;
+}
+
+.alertControls{
+    display : flex;
+    justify-content: space-between;
+    padding : 0.5rem 1rem 0rem;
+}
+
+.alertCancel,.alertDelete{
+    background : transparent;
+    border : none;
+    font-size : 1rem;
+    color : #BCD2E8;
+    cursor : pointer;
+}
